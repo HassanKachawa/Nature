@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://127.0.0.1:5500/My%20First%20Website.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Website</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: white;
+    }
+    nav{
+        font-family: lato,sans-serif;
+        background-color: black;
+        overflow: hidden;
+    }
+    nav a{
+        text-decoration: none;
+        text-align: center;
+        float: left;
+        padding: 25px;
+        color: white;
+    }
+    nav a:hover{
+        font-weight: bolder;
+    }
+    input{
+        width: 300px;
+        padding: 5px;
+    }
+    .btn{
+        margin: 20px;
+        padding: 5px;
+    }
+    button{
+        margin: 15px;
+    }
+    footer{
+        background-color: black;
+        font-family: lato,sans-serif;
+        overflow: hidden;
+    }
+    .search{
+        min-height: calc(100vh -20px -20px);
+    }
+    p{
+        padding: 40px;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        font-family: lato,sans-serif;
+    }
+    img{
+        padding: 20px;
+        display: block;
+                margin-left: auto;
+                margin-right: auto;
+    }
+    .quotes{
+        display: flex;
+        justify-content: flex-start;
+            align-items: center;
+    }
+    .quotes a{
+        text-decoration: none;
+            padding: 20px;
+            font-size: 20px;
+            text-align: left;
+            color: white;
+    }
+    .quotes a:hover{
+      font-weight: bolder;
+    }
+
+    footer p{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+    </style>
+</head>
+<body background="./Quotes Website_files/textures.jpg">
+   
+    <nav>
+        <a href="http://127.0.0.1:5500/My%20First%20Website.html#">Home</a>
+        <a href="http://127.0.0.1:5500/My%20First%20Website.html#">About Us</a>
+        <a href="http://127.0.0.1:5500/My%20First%20Website.html#">Help</a>
+    
+       <div class="search">
+            <input type="text" placeholder="Search here" name="">
+            <button class="btn">Search</button>
+           
+        
+    </div></nav>
+
+<div class="image">
+    <img src="./Quotes Website_files/banner.jpg" alt="">
+    <hr>
+</div>
+    <main>
+          <p>
+            Quote is a hypernym of quotation, as the repetition or copy of a prior statement or thought. Quotation marks are punctuation marks that indicate a quotation. <br> Both quotation and quotation marks are sometimes abbreviated as "quote(s)".
+            A quotation is the repetition of a sentence, phrase, or passage from speech or text that someone has said or written. <br> [1] In oral speech, it is the representation of an utterance (i.e. of something that a speaker actually said) that is introduced by a quotative marker, <br> such as a verb of saying. For example: John said: "I saw Mary today". Quotations in oral speech are also signaled by special prosody in addition to quotative markers. In written text, quotations are signaled by quotation marks. <br>[2] Quotations are also used to present well-known statement parts that are explicitly attributed by citation to their original source; <br> such statements are marked with (punctuated with) quotation marks.
+
+Quotations are often used as a literary device to represent someone's point of view. <br> They are also widely used in spoken language when an interlocutor wishes to present a proposition that they have come to know via hearsay.
+          </p>
+          <hr>
+          <br>
+          <br>
+          <br>
+          </main>
+          <div class="quotes">
+              <a href="http://127.0.0.1:5500/nature.html">Nature</a>
+              <a href="http://127.0.0.1:5500/hardwork.html">Hardwork</a>
+              <a href="http://127.0.0.1:5500/abstract.html">Abstract</a>
+          </div>    
+          <br>
+             
+    
+    <footer class="flex-all-centre">
+       <p>©Copyright 2020</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
